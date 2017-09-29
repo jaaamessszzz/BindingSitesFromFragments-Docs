@@ -14,7 +14,7 @@ that would be returned by our search would be intractable.
 
 General rules for defining fragments:
 
-    1. **SHOULD BE RIGID** i.e rings, aromatic, conjugated systems. An extra step is required for fragments that contain rotatable bonds, described below.
+    1. **SHOULD BE RIGID** i.e. rings, aromatic, conjugated systems. An extra step is required for fragments that contain rotatable bonds, described below.
     2. Consist of 5-10 atoms
     3. Contain a maximum of three hydrogen bond donors/acceptors
 
@@ -44,6 +44,14 @@ Move all of your fragments to the Fragment_Inputs directory so that your project
             |   +-- * All conformer .pdb files *
             |   +-- * All conformer .param files *
             +-- User_Inputs
+
+Fragments with Rotatable Bonds
+==============================
+You will need to tell BindingSitesFromFragments if your fragment contains rotatable bonds. Otherwise, cluster analysis
+in later steps will return garbage. To do this, create a new directory under ``Fragment_Inputs/`` called ``Rigid_Fragment_Atoms``
+and populate it with the rigid portions of your fragments. Rename the .pdb files to ``Fragment_<number>-rigid.pdb``, where
+``<number>`` corresponds to the original fragment. BindingSitesFromFragments will use these atoms for alignments.
+
 
 Finding Fragment-Containing Small Molecules
 ===========================================
@@ -83,6 +91,18 @@ likely to find bound to proteins in the PDB:
 
 The .csv will contain the top 10,000 search results for small molecules that contain our fragment as a substructure with
 the same connectivites and local chemical environments as our target molecule.
+
+Add each fragment number and its SMILES string to ``Fragment_Inputs.csv``. BindingSitesFromFragments will read this file
+to search the PDB for protein-ligand complexes where the ligand contains a fragment as a substructure. When you're
+finished generating fragments, your ``Fragment_Inputs.csv`` file should look something like this:
+
+============== ==================
+Fragment       SMILES_fragment
+============== ==================
+<number>       <SMILES_string>
+<number>       <SMILES_string>
+<number>       <SMILES_string>
+============== ==================
 
 Your project should now look like this: ::
 

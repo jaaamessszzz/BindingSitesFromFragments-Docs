@@ -1,5 +1,6 @@
 .. toctree::
    :maxdepth: 1
+   :caption: Protocol Steps
 
    New
    Define_Fragments

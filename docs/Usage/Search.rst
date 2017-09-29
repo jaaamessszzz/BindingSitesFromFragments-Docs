@@ -18,14 +18,14 @@ locally so that your project should now look like this: ::
             |   +-- <Ligand_1>
             |   |   +-- <PDB_1>
             |   |   +-- <PDB_2>
-            |   +-- <Ligand_1>
+            |   +-- <Ligand_2>
             |       +-- <PDB_1>
             |       +-- <PDB_2>
             +-- Fragment_2
                 +-- <Ligand_1>
                 |   +-- <PDB_1>
                 |   +-- <PDB_2>
-                +-- <Ligand_1>
+                +-- <Ligand_2>
                     +-- <PDB_1>
                     +-- <PDB_2>
 
