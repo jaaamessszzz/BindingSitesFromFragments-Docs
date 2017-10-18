@@ -52,7 +52,6 @@ in later steps will return garbage. To do this, create a new directory under ``F
 and populate it with the rigid portions of your fragments. Rename the .pdb files to ``Fragment_<number>-rigid.pdb``, where
 ``<number>`` corresponds to the original fragment. BindingSitesFromFragments will use these atoms for alignments.
 
-
 Finding Fragment-Containing Small Molecules
 ===========================================
 Once you have defined your fragments, we will use the `PubChem Open Chemistry Database <https://pubchem.ncbi.nlm.nih.gov/search/>`_

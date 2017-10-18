@@ -17,7 +17,7 @@ To create a new project::
 to keep things simple once you move to Rosetta for design.
 
 ``bsff new <Compound_ID>`` creates a new directory named *<Compound_ID>* within the *Compound* directory. This is where
-BidingSitesFromFragments with keep PDBs and other things throughout the binding site design process. ::
+BindingSitesFromFragments with keep PDBs and other things throughout the binding site design process. ::
 
     +-- Compounds
         +-- <Compound_ID>
