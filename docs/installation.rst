@@ -1,6 +1,6 @@
-*******************************
+************
 Installation
-*******************************
+************
 
 Dependencies
 ============
@@ -46,8 +46,20 @@ Gubobi
 ------
 `Gurobi <https://www.gurobi.com/index>`_ is an optimization package that BindingSitesFromFragments uses to solve for
 binding sites with minimized cumulative two-body interaction energies between all residue-residue and residue-ligand
-pairs. We have a UCSF license for using Gurobi on the QB3 cluster where everything is already set up, so you most likely
-will not have to worry about this.
+pairs. We have a UCSF license for using Gurobi on the QB3 cluster, but you will still need to install gurobi and other
+dependencies on the cluster yourself.
+
+These resources should prove useful for setting up Gurobi on the QB3 cluster:
+
+    * `General installation instructions <http://www.gurobi.com/documentation/7.5/quickstart_linux/software_installation_guid.html>`_
+    * `Setting up the Gurobi Python interface <http://www.gurobi.com/documentation/7.5/quickstart_mac/the_gurobi_python_interfac.html>`_
+    * `Setting up a Gurobi license <http://www.gurobi.com/documentation/7.5/quickstart_mac/creating_a_token_server_cl.html>`_
+
+A few notes:
+
+    * You will need to use ``scl enable python27`` with the --user flag when installing the Gurobi Python interface (``scl enable python27 'python setup.py install --user'``)
+    * Make sure you have all the other python package dependencies before using the Gurobi job script, namely pandas. You can pip install this, but again you will need to use ``scl enable python27`` with the --user flag
+    * Ask James for the hostname and port configuration for the gurobi license file
 
 OpenEye Omega
 -------------
@@ -61,7 +73,7 @@ Avogadro is a molecular editor that makes it simple to generate and save both ta
 .mol2 or .pdb files.
 
 Pymol
-------
+-----
 Pymol is a molecular viewer that is extremely handly for visualizing proteins, residue clusters, small molecule fragments,
 and basically anything that can be represented as a .pdb or sybyl .mol2 file.
 

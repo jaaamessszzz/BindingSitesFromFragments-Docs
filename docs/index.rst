@@ -10,7 +10,6 @@ Welcome to BindingSitesFromFragments's documentation!
    :maxdepth: 1
    :caption: Contents:
 
-   introduction
    installation
    Usage/index
 
