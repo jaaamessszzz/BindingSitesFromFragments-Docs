@@ -1,6 +1,12 @@
+*****
+Usage
+*****
+
+Make binding sites!!!
+
 .. toctree::
    :maxdepth: 1
-   :caption: Protocol Steps
+   :caption: Protocol Steps:
 
    New
    Define_Fragments
