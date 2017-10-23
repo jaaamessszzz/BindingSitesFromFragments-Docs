@@ -2,7 +2,7 @@
 Usage
 *****
 
-Make binding sites!!!
+Generate binding sites!!!
 
 .. toctree::
    :maxdepth: 1

@@ -2,7 +2,16 @@
 Match Binding Sites to Scaffolds
 ********************************
 
+Matching
+========
+
 Ask James for scripts, press enter.
+
+.. note::
+
+    The scaffold library contains all relevant biological assemblies within an asymmetric unit. Each unique scaffold is
+    enumerated as ASDF.pdb1.gz, ASDF.pdb2.gz, etc... A consequence of this is that your stdout files will get overwritten
+    during matching since file extensions are not taken into consideration when  writing the output files.
 
 Filtering Matches
 =================
@@ -26,3 +35,4 @@ The following metrics are also calculated, but are not used to throw out matches
 The following metrics were implemented by Roland, but are no longer used due to updates in the method:
 
     * Minimum number of motif residues per chain
+
