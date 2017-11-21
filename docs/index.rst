@@ -7,7 +7,7 @@ Welcome to BindingSitesFromFragments's documentation!
 =====================================================
 
 This is the documentation for the BindingSiteFromFragments method developed by James Lucas in the Kortemme Lab for *de novo*
-design of small molecule binding sites for arbitrary target molecules.
+design of small molecule binding sites.
 
 **Disclaimer:** Since this is unpublished work, much of the :ref:`Usage` instructions will not make a lot of sense. However,
 feel free to contact me with any questions.
