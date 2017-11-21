@@ -18,7 +18,7 @@ Other Programs you may find useful:
 
 Rosetta
 -------
-Rosetta is a Macromolecular Design Suite that has ben used for all sorts of successful protein design applications.
+Rosetta is a Macromolecular Design Suite that has been used for all sorts of successful protein design applications.
 BindingSitesFromFragments uses Rosetta to:
 
     1. Score pairwise interaction energies between sets of residues

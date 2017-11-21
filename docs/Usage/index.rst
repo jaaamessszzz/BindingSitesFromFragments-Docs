@@ -2,7 +2,7 @@
 Usage
 *****
 
-Generate binding sites!!!
+Generate binding sites for your target molecule!
 
 .. toctree::
    :maxdepth: 1
